@@ -1,12 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/main.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Conditions</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+    <!-- HEADER -->
+    <header class="header" id="#main">
+        <div class="container">
+            <nav class="navbar">
+                <span class="navbar__logo">
+                    <img src="./assets/logo.ico" alt="" />
+                </span>
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./index.html">Home</a>
+                    </li>
+                    <li class="navbar__item dropdown">
+                        <a class="navbar__link" href="#info">Info <i
+                                class="fa-solid fa-chevron-up"></i></a>
+                        <ul class="navbar__sublist">
+                            <li class="navbar__subitem">
+                                <a class="navbar__sublink" href="#ifelse">If Fundamentals</a>
+                            </li>
+                            <li class="navbar__subitem">
+                                <a class="navbar__sublink" href="#bool">Bool Logic</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item dropdown">
+                        <a class="navbar__link" href="#">Inspiration <i
+                                class="fa-solid fa-chevron-up"></i></a>
+                        <ul class="navbar__sublist">
+                            <li class="navbar__subitem">
+                                <a class="navbar__sublink" href="#example">Examples</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#optimize">Optimization</a>
+                    </li>
+                </ul>
+                <div class="navbar__actions">
+                    <a href="#" class="navbar__btn search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="navbar__btn menu"><i class="fa-solid fa-bars"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero__locker">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        JavaScript Conditions: <br />
+                        A Web Design Masterclass
+                    </h1>
+                    <p class="hero__text">
+                        Unlock the power of JavaScript conditions and level up your web
+                        design skills!
+                    </p>
+                    <div class="hero__actions">
+                        <a href="" class="hero__btn start">Start Learning</a>
+                        <a href="" class="hero__btn source">View Course Outline</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- STATEMENTS -->
+    <section class="statements" id="info">
+        <div class="statements__wrapper">
+            <div class="container">
+                <div class="statements__content">
+                    <h2 class="statements__title">
+                        Understanding Conditional Statements
+                    </h2>
+                </div>
+                <div class="statements__list">
+                    <div class="statements__item">
+                        <span class="statements__item__number">1</span>
+                        <div class="statements__item__content">
+                            <h3 class="statements__item__title">What are Conditionals?</h3>
+                            <p class="statements__item__subtitle">
+                                Conditionals are decision-making tools in JavaScript. They
+                                help your code make choices.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="statements__item">
+                        <span class="statements__item__number">2</span>
+                        <div class="statements__item__content">
+                            <h3 class="statements__item__title">Why Use Them?</h3>
+                            <p class="statements__item__subtitle">
+                                They make your websites interactive and responsive.
+                                Conditionals create dynamic user experiences.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="statements__item">
+                        <span class="statements__item__number">3</span>
+                        <div class="statements__item__content">
+                            <h3 class="statements__item__title">Real-World Examples</h3>
+                            <p class="statements__item__subtitle">
+                                From login systems to game logic, conditionals are everywhere.
+                                They're the building blocks of web interactivity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- If else statement -->
+    <section class="ifelse" id="ifelse">
+        <div class="container">
+            <div class="ifelse__content">
+                <h2 class="ifelse__title">The Fundamentals of If-Else Statements</h2>
+            </div>
+            <div class="ifelse__list">
+                <div class="ifelse__item">
+                    <span class="ifelse__item__number">1</span>
+                    <hr />
+                    <div class="ifelse__item__content">
+                        <h3 class="ifelse__item__title">If Statement</h3>
+                        <p class="ifelse__item__subtitle">
+                            The simplest form. It executes code if a condition is true.
+                        </p>
+                    </div>
+                </div>
+                <div class="ifelse__item">
+                    <span class="ifelse__item__number">2</span>
+                    <hr />
+                    <div class="ifelse__item__content">
+                        <h3 class="ifelse__item__title">If-Else</h3>
+                        <p class="ifelse__item__subtitle">
+                            Adds an alternative. It handles both true and false scenarios.
+                        </p>
+                    </div>
+                </div>
+                <div class="ifelse__item">
+                    <span class="ifelse__item__number">3</span>
+                    <hr />
+                    <div class="ifelse__item__content">
+                        <h3 class="ifelse__item__title">Else-If</h3>
+                        <p class="ifelse__item__subtitle">
+                            For multiple conditions. It allows you to check several
+                            possibilities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bool logic -->
+    <section class="boollogic" id="bool">
+        <div class="container">
+            <div class="boollogic__content">
+                <h2 class="boollogic__title">Leveraging Boolean Logic</h2>
+            </div>
+            <div class="boollogic__list">
+                <div class="boollogic__item">
+                    <i class="fa-solid fa-object-group"></i>
+                    <div class="boollogic__item__content">
+                        <h3 class="boollogic__item__title">AND (&&)</h3>
+                        <p class="boollogic__item__subtitle">
+                            Both conditions must be true. It's like a strict gatekeeper.
+                        </p>
+                    </div>
+                </div>
+                <div class="boollogic__item">
+                    <i class="fa-solid fa-window-restore"></i>
+                    <div class="boollogic__item__content">
+                        <h3 class="boollogic__item__title">OR (||)</h3>
+                        <p class="boollogic__item__subtitle">
+                            Either condition can be true. It's more flexible.
+                        </p>
+                    </div>
+                </div>
+                <div class="boollogic__item">
+                    <i class="fa-solid fa-exclamation"></i>
+                    <div class="boollogic__item__content">
+                        <h3 class="boollogic__item__title">NOT (!)</h3>
+                        <p class="boollogic__item__subtitle">
+                            Flips the condition. It's the rebel of boolean logic.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Examples -->
+    <section class="examples" id="example">
+        <div class="container">
+            <div class="examples__content">
+                <h2 class="examples__title">Code Examples</h2>
+            </div>
+            <div class="examples__list">
+                <div class="examples__item">
+                    <h3 class="examples__item__title">If Statement</h3>
+                    <p class="examples__item__subtitle">
+                        Checks a single condition. Executes code if the condition is true.
+                    </p>
+                    <code class="examples__item__code">
+             "
+                if (age >= 18) 
+                { <br>
+                  console.log("You are eligible to vote.");
+                }
+                "
+            </code>
+                </div>
+                <div class="examples__item">
+                    <h3 class="examples__item__title">Else Statement</h3>
+                    <p class="examples__item__subtitle">
+                        Provides an alternative path. Runs code if the initial condition is false.
+                    </p>
+                    <code class="examples__item__code">
+             "
+             if (age >= 18) {
+                console.log("You are eligible to vote.");
+              } else {
+                console.log("You are not eligible to vote yet.");
+              }
+                "
+            </code>
+                </div>
+                <div class="examples__item">
+                    <h3 class="examples__item__title">Else If Statement</h3>
+                    <p class="examples__item__subtitle">
+                        Allows for multiple checks. Evaluates conditions sequentially.
+                    </p>
+                    <code class="examples__item__code">
+             "
+             if (score >= 90) {
+                console.log("A");
+              } else if (score >= 80) {
+                console.log("B");
+              } else if (score >= 70) {
+                console.log("C");
+              } else {
+                console.log("D");
+              }
+                "
+            </code>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Optimization -->
+     <section class="optimization" id="optimize">
+        <div class="container">
+           <div class="optimization__wrapper">
+            <div class="optimization__content">
+                <h2 class="optimization__title">Code Optimization: Streamlining Your JavaScript</h2>
+                <p class="optimization__subtitle">Write concise code for better website performance and a smoother user experience. Optimizing your JavaScript code can make your website faster and more responsive.</p>
+            </div>
+            <div class="optimization__image">
+                <img src="./assets/optimizing.jpg" alt="Optimization">
+            </div>
+           </div>
+        </div>
+     </section>
 </body>
+
 </html>

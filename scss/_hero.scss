@@ -1,0 +1,150 @@
+.hero{
+    width: 100%;
+    background: url(../assets/hero.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 604px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__locker{
+        width: 100%;
+        height: 100%;
+        background-color: #00000099;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+
+    }
+
+    &__title{
+        font-size: 62px;
+        font-weight: 500;
+        line-height: 77px;
+        max-width: 980px;
+        text-wrap: balance;
+        background-color: #B380FF;
+        background-image: linear-gradient(50deg, #B380FF 10%,   #7AF0FF 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+
+    &__text{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29px;
+        text-align: center;
+        color: white;
+    }
+    &__actions{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__btn{
+        padding: 4px 10px;
+        background: linear-gradient(140deg, #B380FF 10%,   #7AF0FF 90%);
+        border: none;
+        color: black;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+
+        &:hover{
+          background: #7AF0FF;
+          color: black;
+          box-shadow:0 0 10px 0 #7AF0FF inset, 0 0 10px 4px #7AF0FF;
+
+
+        }
+    }
+    .source{
+        background: black;
+        border: none;
+        background-color: #B380FF;
+        text-wrap: balance;
+        background-image: linear-gradient(50deg, #B380FF 10%,   #7AF0FF 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border: 1px solid #7AF0FF;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-weight: 600;
+        text-decoration: none;
+        &:hover{
+            background: #7AF0FF;
+            background-image: black;
+            -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+            box-shadow:0 0 10px 0 #7AF0FF inset, 0 0 10px 4px #7AF0FF;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero{
+        &__title{
+            font-size: 40px;
+            line-height: 50px;
+        }
+
+        &__text{
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &__btn{
+            font-size: 16px;
+        }
+
+        .source{
+            font-size: 16px;
+        }
+
+
+
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .hero{
+        &__title{
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        &__text{
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__btn{
+            font-size: 14px;
+        }
+
+        .source{
+            font-size: 14px;
+        }
+
+
+
+    }   
+    
+}
